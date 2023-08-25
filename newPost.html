@@ -1,86 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="newPost.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Header</title>
-</head>
+  </head>
 
-<body style="background-color: #e7e5e5;">
+  <body style="background-color: #e7e5e5">
     <section>
-        <h2 class="text-center pt-5">For New Post</h2>
-        <div class="container mt-5 pb-5">
-            <form>
-                <div class="form-group">
-                    <label for="position">Position</label>
-                    <input type="text" class="form-control border-radius" id="position1" aria-describedby=""
-                     placeholder="Sales Manager">
-                </div>
-                <div class="form-group">
-                    <label for="company name">Company Name</label>
-                    <input type="text" class="form-control border-radius" id="companyName"
-                        placeholder="Enter the company name">
-                </div>
-                <div class="form-group">
-                    <label for="company location">Company Location:</label>
-                    <input type="text" class="form-control border-radius" id="companyLocation"
-                        placeholder="Naraina Vihar, Delhi">
-                </div>
-                <div class="form-group">
-                    <label for="Salary">Salary Range (per month):</label>
-                    <input type="text" class="form-control border-radius" id="salaryRange" placeholder="35,000">
-                </div>
-                <div class="form-group">
-                    <label for="Experience">Experience in Sales / Business Development (years):</label>
-                    <input type="text" class="form-control border-radius" id="saleExperience" placeholder="1-2 years">
-                </div>
+      <h2 class="text-center pt-5">For New Post</h2>
+      <div class="container mt-5 pb-5">
+        <form id="myForm">
+          <div class="form-group">
+            <label for="position">Position</label>
+            <input
+              type="text"
+              class="form-control border-radius"
+              id="position1"
+              aria-describedby=""
+              placeholder="Sales Manager"
+            />
+          </div>
+          <div class="form-group">
+            <label for="company name">Company Name</label>
+            <input
+              type="text"
+              class="form-control border-radius"
+              id="companyName"
+              placeholder="Enter the company name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="company location">Company Location:</label>
+            <input
+              type="text"
+              class="form-control border-radius"
+              id="companyLocation"
+              placeholder="Naraina Vihar, Delhi"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Salary">Salary Range (per month):</label>
+            <input
+              type="text"
+              class="form-control border-radius"
+              id="salaryRange"
+              placeholder="35,000"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Experience"
+              >Experience in Sales / Business Development (years):</label
+            >
+            <input
+              type="text"
+              class="form-control border-radius"
+              id="saleExperience"
+              placeholder="1-2 years"
+            />
+          </div>
 
-                <div class="form-group">
-                    <label for="Job Highlights">Job Highlights :</label>
-                    <textarea class="form-control border-radius" id="jobHighlights" name="bullet_points" rows="5"
-                        placeholder="• Graduate and above &#10;• Females Only&#10;• 08:00 AM - 06:00 PM | 6 days working"></textarea>
-                </div>
+          <div class="form-group">
+            <label for="Job Highlights">Job Highlights :</label>
+            <textarea
+              class="form-control border-radius"
+              id="jobHighlights"
+              name="bullet_points"
+              rows="5"
+              placeholder="• Graduate and above &#10;• Females Only&#10;• 08:00 AM - 06:00 PM | 6 days working"
+            ></textarea>
+          </div>
 
-                <div class="form-group">
-                    <label for="Job Description">Job Description :</label>
-                    <textarea class="form-control border-radius" id="jobDescription" name="bullet_points" rows="5"
-                        placeholder="• Create new business opportunities by building trust and contacts with clients &#10;• Give a brief about the product, features and benefits to the customers&#10;"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="Contact Person">Contact Person</label>
-                    <input type="text" class="form-control border-radius" id="contactPerson" aria-describedby="" placeholder="Name">
-                </div>
-                <!-- <div>
-    <h4 class="pt-3">Job-Specific Questions:</h4>
-    <div class="form-group">
-    <label for="fit_for_position">Why do you think you're a good fit for the Sales Manager position?</label>
-    <textarea class="form-control" id="fit_for_position" name="fit_for_position" required></textarea><br>
-    </div>
-    <div class="form-group">
-    <label for="sales_experience">Briefly describe your experience in Sales/Business Development:</label>
-    <textarea class="form-control" id="sales_experience" name="sales_experience" required></textarea><br>
-    </div> 
-    <div class="form-group">
-    <label>Are you available to work full-time from 08:00 AM to 06:00 PM for 6 days a week?</label>
-    <input class="form-control" type="radio" id="availability_yes" name="availability" value="Yes" required>
-    </div>
-</div> -->
-     <div class="d-flex justify-content-end">
-    <button type="submit" class="btn btn-primary">Post</button>
-    </div>
-    </form>
-     </div>
+          <div class="form-group">
+            <label for="Job Description">Job Description :</label>
+            <textarea
+              class="form-control border-radius"
+              id="jobDescription"
+              name="bullet_points"
+              rows="5"
+              placeholder="• Create new business opportunities by building trust and contacts with clients &#10;• Give a brief about the product, features and benefits to the customers&#10;"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="Contact Person">Contact Person</label>
+            <input
+              type="text"
+              class="form-control border-radius"
+              id="contactPerson"
+              aria-describedby=""
+              placeholder="Name"
+            />
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Post
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
     <!-- Bootstrap JS and jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
-
-</body>
-
+  </body>
 </html>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
+  import {getDatabase, ref, set, } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js"; // Add this import
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBeN98wHrLCOH8DAHhTkzYwC46T92fLArA",
+    authDomain: "jopportal-8170c.firebaseapp.com",
+    databaseURL: "https://jopportal-8170c-default-rtdb.firebaseio.com",
+    projectId: "jopportal-8170c",
+    storageBucket: "jopportal-8170c.appspot.com",
+    messagingSenderId: "817677865282",
+    appId: "1:817677865282:web:62f64d2898879f096138db",
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  // const auth = getAuth(app); // Comment this line out if you don't need authentication
+  const database = getDatabase(app);
+
+  const submitBtn = document.getElementById("submitBtn");
+
+  submitBtn.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent form submission
+
+    var position1 = document.getElementById("position1").value;
+    var CName = document.getElementById("companyName").value;
+    var CLocation = document.getElementById("companyLocation").value;
+    var Salary = document.getElementById("salaryRange").value;
+    var Experience = document.getElementById("saleExperience").value;
+    var Job = document.getElementById("jobHighlights").value;
+    var JobDes = document.getElementById("jobDescription").value;
+    var Person = document.getElementById("contactPerson").value;
+
+    // Use set to push data to Firebase
+    set(ref(database, "jobs"), {
+      position1: position1,
+      CName: CName,
+      CLocation: CLocation,
+      Salary: Salary,
+      Experience: Experience,
+      Job: Job,
+      JobDes: JobDes,
+      Person: Person,
+    })
+      .then(() => {
+        // Data saved successfully!
+        alert("Data saved successfully!");
+        // Reset the form
+        document.getElementById("myForm").reset();
+      })
+      .catch((error) => {
+        // The write failed...
+        alert(error);
+      });
+  });
+</script>
