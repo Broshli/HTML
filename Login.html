@@ -67,7 +67,7 @@
             <input type="password" placeholder="Password" id="password">
 
             <div class="divBtn">
-              <button class="registered" id="submitBtn">Sign up</button>
+              <!-- <button class="registered" id="submitBtn">Sign up</button> -->
               <button class="registered" id="login">Login</button>
             </div>
         </div>
@@ -136,29 +136,32 @@
   const auth = getAuth();
 
 
-  submitBtn.addEventListener('click',(e)=>{
+  // Sign up 
+  // submitBtn.addEventListener('click',(e)=>{
 
-    var email = document.getElementById("email-field").value;
-    var password = document.getElementById("password").value;
-    createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
+  //   var email = document.getElementById("email-field").value;
+  //   var password = document.getElementById("password").value;
+  //   createUserWithEmailAndPassword(auth, email, password)
+  // .then((userCredential) => {
+  //   // Signed in 
+  //   const user = userCredential.user;
+  //   // ...
 
-    window.location.assign("newPost.html");
-    alert("successfully");
+  //   window.location.assign("newPost.html");
+  //   alert("successfully");
 
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-    alert(errorMessage);
-  });
+  // })
+  // .catch((error) => {
+  //   const errorCode = error.code;
+  //   const errorMessage = error.message;
+  //   // ..
+  //   alert(errorMessage);
+  // });
 
-  });
+  // });
 
+
+  // Log in
   login.addEventListener('click',(e)=>{
     var email = document.getElementById("email-field").value;
     var password = document.getElementById("password").value;
