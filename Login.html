@@ -146,7 +146,7 @@
     const user = userCredential.user;
     // ...
 
-    window.location.assign("newPost.html")
+    window.location.assign("newPost.html");
     alert("successfully");
 
   })
@@ -167,6 +167,7 @@
     // Signed in 
     const user = userCredential.user;
     // ...
+    window.location.assign('newPost.html');
     alert("successfully login");
   })
   .catch((error) => {
