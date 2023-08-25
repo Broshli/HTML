@@ -1,0 +1,84 @@
+.contaner{
+    margin: 10px 10px;
+}
+
+.navbar-collapse{
+    justify-content: end;
+}
+
+.navbar-nav li a{
+    font-size: 20px;
+    margin-top: 10px !important; 
+    margin: 0px 10px;
+}
+
+.header_btn button{
+    margin: 0px 10px;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main h1{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.button{
+    display: block;
+    margin-top: 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(230, 44, 44);
+}
+
+.main input{
+    display: flex;
+    margin: 10px 1px;
+    padding: 10px;
+    border-radius: 7px;
+    width: 50dvb;
+    
+}
+
+.main button{
+    /* display: inline;
+    margin: 15px;
+    margin-left: 25%; */
+    width: 109px;
+}
+
+.divBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#email-lable{
+    display: block;
+    position: relative;
+    bottom: -48px;
+    left: 13px;
+    text-align: start;
+    color: #777;
+    font-size: 18px;
+    transition: bottom 0.3s;
+}
+
+#email-error{
+    position: absolute;
+    top: 37%;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: crimson;
+    transition: top 0.5s;
+}
