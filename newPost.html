@@ -48,7 +48,7 @@
               <a href="newPost.html">
                 <button class="login-btn login">Log In</button>
               </a>
-              <!-- <button class="register-btn register">Register</button> -->
+              <button class="register-btn register">Register</button>
             </li>
           </ul>
         </div>
@@ -56,8 +56,36 @@
     </section>
 
     <section>
+      <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="active">
+          <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <H4 style="margin-right: 15px; margin-bottom: 0rem;">Logo</H4>
+                <i class="fas fa-align-left" style="margin-top: 8px;"></i>
+              </button>
+            <!-- Your page content goes here -->
+            
+        </div>
+        <hr style="background-color: transparent;">
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <!-- Add more menu items as needed -->
+            </ul>
+        </nav>
+        <!-- Page Content -->
+    </div>
+
       <h2 class="text-center pt-5">For New Post</h2>
-      <div class="container mt-5 pb-5">
+      <div class="container mt-5 pb-5" id="body">
         <form id="myForm">
           <div class="form-group">
             <label for="position">Position</label>
@@ -139,7 +167,7 @@
               placeholder="Name"
             />
           </div>
-          <div class="d-flex justify-content-end">
+          <div id="submitB">
             <button type="submit" class="btn btn-primary" id="submitBtn">
               Post
             </button>
@@ -147,6 +175,7 @@
         </form>
       </div>
     </section>
+ 
     <!-- Bootstrap JS and jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -217,3 +246,48 @@
       });
   });
 </script>
+
+<!-- Side NevBar Script Starts -->
+<script>
+  const toggleSidebar = () => {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+  };
+
+  document.getElementById('sidebarCollapse').addEventListener('click', toggleSidebar);
+ 
+
+ const toggleBody = () => {
+  const body = document.getElementById('body');
+
+  body.classList.toggle('active');
+ };
+
+ document.getElementById('sidebarCollapse').addEventListener('click', toggleBody);
+
+// const toggleInput = () => {
+//   const bodyInput = document.getElementById('myForm input');
+ 
+//   bodyInput.classList.toggle('active');
+// };
+
+// document.getElementById('sidebarCollapse').addEventListener('click', toggleInput);
+
+// const toggleTextarea = () => {
+//   const bodyInput = document.getElementById('myForm textarea');
+ 
+//   bodyInput.classList.toggle('active');
+// };
+
+// document.getElementById('sidebarCollapse').addEventListener('click', toggleTextarea);
+
+// const togglePost = () =>{
+//   const PostBtn = document.getElementById('submitB');
+
+//   PostBtn.classList.toggle('active');
+// }
+
+// document.getElementById('sidebarCollapse').addEventListener('click', togglePost);
+
+</script>
+<!-- Side NevBar Script Ends -->

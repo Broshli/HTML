@@ -417,6 +417,7 @@ nav .login-btn {
   font-size: 1rem;
   cursor: pointer;
 }
+
 div.hr-left, div.hr-right {
   width: 30%;
   height: 1px;
@@ -813,3 +814,105 @@ hr {
     border-radius: 5px;
     border : 1px solid var(--green-border);
   }
+
+
+  /* Side NevBar Starts */
+
+  #sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 90px;
+    left: -250px;
+    background-color: #9d9d9d;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+#sidebar.active {
+    left: 0;
+    transition: 0.5s ease;
+}
+
+#sidebar h3 {
+    color: #fff;
+    padding: 20px;
+}
+
+#sidebar ul {
+    padding: 20px;
+    list-style-type: none;
+    padding-top: 0;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+/* Content Styles */
+#content {
+    width: 100%;
+    padding: 15px;
+    transition: all 0.3s;
+}
+
+/* Button Styles */
+#sidebarCollapse {
+    background-color: #9d9d9d;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: fixed!important;
+    top: 104px;
+    left: 12px;
+    display: flex;
+    width: 116px;
+    border-radius: 10px;
+}
+
+#sidebarCollapse:hover {
+    background-color: #555;
+}
+
+  /* Side NevBar Ends */
+
+
+  .pt-5, .py-5 {
+    padding-top: 7rem!important;
+}
+
+
+
+#body{
+  margin-top: 3rem!important;
+  margin-left: 17rem!important;
+  transition: 0.5s ease;
+}
+
+#body.active{
+  margin-left: 9rem!important;
+  transition: 0.5s ease;
+}
+
+#myForm input{
+  width: 92% !important;
+}
+
+
+#myForm textarea{
+  width: 92% !important;
+}
+
+
+#submitB{
+  margin-left: 57rem;
+} 
