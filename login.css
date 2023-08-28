@@ -7,7 +7,7 @@
 }
 
 .navbar-nav li a{
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px !important; 
     margin: 0px 10px;
 }
@@ -15,6 +15,17 @@
 .header_btn button{
     margin: 0px 10px;
 }
+
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: default;
+  }
+  
+  .navbar-brand span{
+    color: #008BDC;
+  }
+
 
 .main{
     position: absolute;
